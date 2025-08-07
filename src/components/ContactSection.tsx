@@ -62,19 +62,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "Email",
-      description: "contato@devagency.com",
+      description: "nyxaragency@gmail.com",
       action: "",
     },
     {
       icon: Phone,
       title: "Telefone",
-      description: "+55 11 99999-9999",
+      description: "+55 19 98612-4310",
       action: "",
     },
     {
       icon: MessageCircle,
       title: "WhatsApp",
-      description: "+55 11 99999-9999",
+      description: "+55 19 98612-4310",
       action: "",
     },
   ];
@@ -106,7 +106,11 @@ const ContactSection = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                action="https://formsubmit.co/nyxaragency@gmail.com"
+                method="POST"
+                className="space-y-6"
+              >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name">Nome *</Label>
