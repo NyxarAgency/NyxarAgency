@@ -11,7 +11,7 @@ const HeroSection = () => {
   };
   const openWhatsApp = () => {
     const encodedMessage = "ola, gostaria de um orcamento";
-    const url = `https://wa.me/${19991997680}?text=${encodedMessage}`;
+    const url = `https://wa.me/${19986124310}?text=${encodedMessage}`;
     window.open(url, "_blank");
   };
 

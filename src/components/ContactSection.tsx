@@ -16,7 +16,7 @@ import { useToast } from "@/hooks/use-toast";
 const ContactSection = () => {
   const openWhatsApp = () => {
     const encodedMessage = "ola, gostaria de um orcamento";
-    const url = `https://wa.me/${19991997680}?text=${encodedMessage}`;
+    const url = `https://wa.me/${19986124310}?text=${encodedMessage}`;
     window.open(url, "_blank");
   };
   const [formData, setFormData] = useState({
@@ -30,6 +30,13 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const message = e.target.message.value;
+    const service = e.target.service.value;
+    const company = e.target.company.value;
+
+    window.location.href= `mailto:nyxaragency@gmail.com?subject=Formulario&body=Nome: ${name}%0AEmail: ${email}%0AMensagem: ${message}%0AService: ${service}%0ACompany: ${company}`
 
     // Simulate form submission
     toast({
